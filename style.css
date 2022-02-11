@@ -22,6 +22,7 @@ main{
    padding: 20px;
    border-radius: 15px;
    justify-content: center;
+   box-shadow:0 8px 16px hsl(0deg 90% 10% / 10%) ;
 }
 
 #img-main{
@@ -128,9 +129,6 @@ main{
     color: hsl(215, 51%, 70%);
 }
 
-#author p a{
-    color: hsl(0, 0%, 100%);
-}
 
 footer{
     margin-top: 35px;
