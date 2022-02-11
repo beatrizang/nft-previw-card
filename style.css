@@ -10,6 +10,8 @@ body{
     background-color: hsl(217, 54%, 11%);
     text-align: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -19,7 +21,7 @@ main{
    width: 320px;
    padding: 20px;
    border-radius: 15px;
-   
+   justify-content: center;
 }
 
 #img-main{
@@ -28,17 +30,53 @@ main{
     border-radius: 15px;
 }
 
-#img-main:hover{
-  cursor: pointer;
+.contenedor {
+    position: relative;
+    width: 100%;
+  }
   
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
   
-}
+  .overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0%, 100%, 97%, 50%);
+    border-radius: 15px;
+  }
+  
+  .contenedor:hover .overlay {
+    opacity: 1;
+  }
+
+  .view {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 #card h3{
     color: hsl(0, 0%, 100%);
 }
 
-#card h3 a:hover{
+#links:hover{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
@@ -90,13 +128,14 @@ main{
     color: hsl(215, 51%, 70%);
 }
 
-#author p span{
+#author p a{
     color: hsl(0, 0%, 100%);
 }
 
-#author p span a:hover{
-    color: hsl(178, 100%, 50%);
-    cursor: pointer;
+footer{
+    margin-top: 35px;
+    color: hsl(215, 51%, 70%);
 }
+
 
 
