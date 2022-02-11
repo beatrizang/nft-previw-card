@@ -24,8 +24,19 @@ main{
     border-radius: 15px;
 }
 
+#img-main:hover{
+  cursor: pointer;
+  
+  
+}
+
 #card h3{
     color: hsl(0, 0%, 100%);
+}
+
+#card h3:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 #card p{
@@ -77,6 +88,11 @@ main{
 
 #author p span{
     color: hsl(0, 0%, 100%);
+}
+
+#author p span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 
