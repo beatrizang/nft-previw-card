@@ -1,6 +1,10 @@
 *{
     font-family: 'Outfit', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
 
 body{
     background-color: hsl(217, 54%, 11%);
@@ -34,7 +38,7 @@ main{
     color: hsl(0, 0%, 100%);
 }
 
-#card h3:hover{
+#card h3 a:hover{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
@@ -90,7 +94,7 @@ main{
     color: hsl(0, 0%, 100%);
 }
 
-#author p span:hover{
+#author p span a:hover{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
