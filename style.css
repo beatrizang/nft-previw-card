@@ -94,7 +94,7 @@ main{
     margin-bottom: 25px;
 }
 
-#icon{
+.icon{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
